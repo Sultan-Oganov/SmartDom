@@ -1,0 +1,8 @@
+.searchContent {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.searchContent__column {
+    flex: 0 1 70%;
+}

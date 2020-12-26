@@ -1,0 +1,79 @@
+.taskForm__adress {
+    margin: 0 0 20px 0;
+}
+.taskForm__adress input {
+    border: none !important;
+    box-shadow: none !important;
+}
+.adress__text {
+    display: flex;
+    justify-content: space-between;
+}
+.adress__input {
+    background: #ffffff;
+    border: 1px solid #a6a6a6;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+}
+.adress__input img {
+    margin: 50% 10px 0 0;
+    width: 20px;
+    height: 20px;
+}
+.adress__input input {
+    width: 90%;
+    height: 50px;
+}
+.adress__input_more {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.adress__input_more input {
+    width: 90%;
+}
+.adress__hideBtn {
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #a6a6a6;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fff;
+    margin: 10px 0 10px 10px;
+    position: relative;
+    cursor: pointer;
+}
+.adress__hideBtn:after {
+    content: "";
+    width: 55%;
+    height: 4px;
+    background: #c4c4c4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.adress__add {
+    font-size: 17px;
+    font-weight: 500;
+    display: block;
+    margin: 0px 0px 15px 0px;
+}
+.checkboxes__row {
+    display: flex;
+    align-items: center;
+}
+.checkboxes__text {
+    color: #a6a6a6;
+    margin: 0 0 0 10px;
+    font-size: 15px;
+    width: 85%;
+}
+.checkboxes__links {
+    margin: 0 0 0 30px;
+}
+.checkboxes__links a {
+    display: block;
+}

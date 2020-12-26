@@ -1,0 +1,22 @@
+.taskQuestion {
+    flex: 0 1 33%;
+    padding: 50px 30px;
+}
+.taskQuestion__title {
+    font-weight: 700;
+    font-size: 35px;
+    margin: 0 0 20px 0;
+}
+.taskQuestion__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 17px;
+    margin: 0 0 5px 0;
+    color: #f4d962;
+    transition: 0.2s 0s;
+}
+.taskQuestion__item:hover {
+    color: #494d4e;
+}

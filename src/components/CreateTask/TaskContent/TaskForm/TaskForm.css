@@ -1,0 +1,24 @@
+.taskForm {
+    background: #fff5cb;
+    flex: 0 1 65%;
+}
+.taskForm__form {
+    width: 85%;
+    margin: 50px auto 70px;
+}
+.yellow {
+    color: #f4d962;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.taskForm__title {
+    font-weight: 700;
+    font-size: 45px;
+}
+.taskForm__descr {
+    margin: 15px 0px 0px 0px;
+    font-weight: 500;
+    font-size: 16px;
+
+    color: #a6a6a6;
+}

@@ -1,0 +1,20 @@
+.sidebar {
+    width: 30%;
+    margin: 120px 0 50px 0;
+}
+
+.sidebar__map {
+    width: 30%;
+    margin: 0px 0px 100px 0px;
+}
+.sidebar__map iframe {
+    width: 360px;
+    height: 300px;
+}
+.sidebar__img {
+    width: 100% !important;
+    margin: 0px 0px 20px 0px;
+}
+.sidebar__img img {
+    width: 100%;
+}

@@ -1,0 +1,86 @@
+.sortingTask {
+    display: flex;
+    border-bottom: 1px solid #000;
+    padding: 30px 70px;
+}
+.sortingTask:last-child {
+    border-bottom: none;
+}
+.sortingTask__left-block {
+    width: 10%;
+}
+.sortingTask__icon {
+    width: 50px;
+}
+.sortingTask__decsr {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.sortingTask__center {
+}
+.sortingTask__name {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+}
+.sortingTask__address {
+    font-size: 15px;
+    margin: 0px 0px 10px 0px;
+}
+.sortingTask__workType {
+    font-size: 15px;
+    margin: 0px 0px 15px 0px;
+}
+.sortingTask__func {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.sortingTask__func img {
+    margin: 0px 10px 0px 0px;
+}
+.sortingTask__shield {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px 0px 0px;
+    cursor: pointer;
+}
+.sortingTask__shield img {
+    height: 20px;
+}
+.sortingTask__card img {
+    width: 25px;
+}
+.sortingTask__services {
+    font-size: 12px;
+    font-weight: 700;
+    color: #455a64;
+}
+.sortingTask__card {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.sortingTask__right-block {
+    text-align: right;
+}
+.sortingTask__price {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px 0px 10px 0px;
+}
+.sortingTask__user {
+    margin: 0px 0px 15px 0px;
+}
+.sortingTask__user a {
+    color: #f4d962;
+    text-decoration: underline !important;
+    font-size: 15px;
+    font-weight: 700;
+}
+.sortingTask__comment {
+    color: #a6a6a6;
+    font-size: 15px;
+    font-weight: 700;
+}

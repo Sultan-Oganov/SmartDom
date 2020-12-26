@@ -1,0 +1,38 @@
+.searchSorting {
+    margin: 0px 0px 50px 0px;
+}
+.searchSorting__choose {
+}
+.choose {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0px 0px 20px 0px;
+}
+.choose__label {
+    font-size: 15px;
+    color: #000000;
+}
+.choose__item {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 700;
+    cursor: pointer;
+}
+.choose__item_date {
+    background: #fff5cb;
+}
+.choose__item_fast {
+    color: #f4d962;
+    padding: 0 15px;
+    text-decoration: underline;
+}
+.choose__item_dist {
+}
+.searchSorting__tasks {
+    background: #ffffff;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 98%;
+}

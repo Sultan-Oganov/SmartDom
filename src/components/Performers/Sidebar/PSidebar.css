@@ -1,0 +1,32 @@
+.pSidebar {
+    width: 100%;
+    flex: 0 1 20%;
+    margin: 0px 10px 0px;
+}
+.pSidebar__img {
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+}
+.pSidebar__img img {
+    width: 100%;
+}
+.pSidebar__tabs {
+}
+.pSidebar__tab {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0px 10px 0px;
+    cursor: pointer;
+}
+.pSidebar__tab_active {
+}
+.pSidebar__items {
+    margin: 10px 0px 0px 20px;
+}
+.pSidebar__items li {
+    list-style: none;
+}
+.pSidebar__item {
+    font-size: 15px;
+    color: #dfb601;
+}

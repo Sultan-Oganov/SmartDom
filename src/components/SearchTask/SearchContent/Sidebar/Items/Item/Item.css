@@ -1,0 +1,18 @@
+.sidebar__item {
+    display: flex !important;
+    align-items: center;
+    /* margin: 0px 0px 0px 10px; */
+}
+.sidebar__item:hover {
+    cursor: pointer;
+}
+
+.sidebar__item_fake {
+    margin: 3px 0px 0px 0px;
+}
+
+.sidebar__item_text {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0px 0px 10px;
+}

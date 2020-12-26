@@ -1,0 +1,103 @@
+.calendar {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0 50px;
+}
+.calendar span {
+    color: #f4d962;
+}
+
+.calendar__row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 70px 0;
+}
+.calendar__img {
+    flex: 0 1 50%;
+}
+.calendar__img img {
+    width: 100%;
+}
+.calendar__img_s {
+    display: flex;
+    align-items: center;
+}
+.calendar__img_s img {
+    width: 60%;
+}
+.calendar__descr {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.calendar__btn {
+    width: 350px;
+    padding: 20px;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    background-color: #f4d962;
+    margin: 0 auto 5px;
+    transition: 0.3s 0s;
+}
+.calendar__btn:hover {
+    color: #000;
+}
+.calendar__btn_descr {
+    text-align: center;
+    font-size: 15px;
+}
+.descr {
+    color: #494d4e;
+}
+.descr__title {
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+.descr__text {
+    width: 60%;
+    margin: 0 0 5px 0;
+    font-weight: 500;
+}
+.descr__btn {
+    width: 137px;
+    border-bottom: 1px solid #528dff;
+}
+
+@media (max-width: 768px) {
+    .calendar {
+        padding: 30px 0 40px;
+    }
+    .calendar__row {
+        text-align: left;
+        flex-wrap: wrap;
+        margin: 0 0 10px 0;
+    }
+    .calendar__descr {
+        margin: 25px auto 0;
+        flex: 0 1 auto;
+        order: 2;
+    }
+    .calendar__img {
+        flex: 0 1 auto;
+        order: 1;
+    }
+    .calendar__img_s img {
+        width: 100%;
+        margin: auto;
+    }
+    .calendar__btn {
+        margin: 40px 0 5px 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+    .descr__title {
+        font-size: 25px;
+    }
+    .descr__text {
+        width: 100%;
+    }
+}

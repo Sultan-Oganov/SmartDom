@@ -1,0 +1,28 @@
+  <label className="taskForm__label" htmlFor="task">Мне нужно</label>
+                <input type="text" placeholder="Напишите, чем вам нужно помочь..." id="task" className="taskForm__input" />
+
+                <div className="taskForm__multiple">
+                    <label className="taskForm__label" >Параметры посылки</label>
+                    <input type="text" placeholder="Вес посылки" className="taskForm__input taskForm__input_s" />
+                    <input type="text" placeholder="Длина, м" className="taskForm__input taskForm__input_s" />
+                    <input type="text" placeholder="Ширина, м" className="taskForm__input taskForm__input_s" />
+                    <input type="text" placeholder="Высота, м" className="taskForm__input taskForm__input_s" />
+                </div>
+
+                <label className="taskForm__label" htmlFor="task__price">Ценность посылки, сом</label>
+                <input type="text" id="task__price" className="taskForm__input" />
+                <img src={qstn} alt="" />
+
+                <label className="taskForm__label">Опишите пожелания и детали, чтобы исполнители лучше оценили вашу задачу</label>
+                <div className="taskForm__textarea">
+                    <textarea type="" id="task__price" className="taskForm__input taskForm__input_s" placeholder="Например: развести 10 небольших пакетов по 5 адресам. Общий вес - 
+не более 7 кг. Желательно успевать доставить все пакеты за один день."></textarea>
+                    <input type="file" className="taskForm__photo" placeholder="Добавить фото" />
+                    <input type="file" className="taskForm__information" placeholder="Приватная информация" />
+                </div>
+
+                <div className="taskForm__return">
+                    <input type="checkbox" />
+                    <label htmlFor="">Забрать у получателя плату за товар и вернуть заказчику</label>
+                    <img src={qstn} alt="" />
+                </div>

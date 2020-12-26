@@ -1,0 +1,66 @@
+.pUser__card {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+    display: flex;
+}
+.pUser__left-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px 0px 0px;
+}
+.pUser__ava {
+    width: 120px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.pUser__ava img {
+    width: 100%;
+}
+.pUser__comment {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 10px 0px 10px 0px;
+}
+.pUser__like {
+    width: 15px;
+}
+.pUser__count {
+}
+.pUSer__stars {
+    display: flex;
+    justify-content: space-between;
+}
+.pUSer__stars img {
+    width: 20px;
+}
+.pUser__right-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pUser__name {
+    font-size: 20px;
+    font-weight: 700;
+}
+.pUser__online {
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    color: #3bbe0d;
+}
+.pUser__descr {
+    width: 95%;
+    font-size: 16px;
+    font-weight: 700;
+}
+.pUser__btn {
+    background: #f4d962;
+    border-radius: 10px;
+    width: 30%;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+}
