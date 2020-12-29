@@ -12,7 +12,12 @@ const SortingTask = (props) => {
             </div>
             <div className="sortingTask__decsr">
                 <div className="sortingTask__center-block">
-                    <h2 className="sortingTask__name">{props.name}</h2>
+                    <h2 className="sortingTask__name">
+                        {props.name}
+                        <span className={props.checkDis ? 'checkDis' : ''}>
+                            <img src={props.check} alt="" />
+                        </span>
+                    </h2>
                     <div className="sortingTask__address">{props.address}</div>
                     <div className="sortingTask__workType">{props.workType}</div>
                     <div className="sortingTask__func">
@@ -30,6 +35,9 @@ const SortingTask = (props) => {
                     <h2 className="sortingTask__price">{props.price}</h2>
                     <div className="sortingTask__user"><a href="#">{props.userName}</a></div>
                     <div className="sortingTask__comment">{props.comment}</div>
+                    <div className={props.btnDis ? 'dis' : ''}>
+                        <button className="sortingTask__btn">{props.btn ? 'Получить оплату' : ''}</button>
+                    </div>
                 </div>
             </div>
 

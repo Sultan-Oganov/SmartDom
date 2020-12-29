@@ -36,3 +36,10 @@
     border-radius: 10px;
     width: 98%;
 }
+.searchSorting .sortingTask__name img {
+    display: none;
+}
+
+.searchSorting .sortingTask__btn {
+    display: none;
+}

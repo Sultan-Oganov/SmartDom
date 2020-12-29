@@ -21,7 +21,9 @@ const Header = () => {
                     <li><NavLink to="/createCalendar" className="header__link"><span>Создать календарь</span></NavLink></li>
                     <li><NavLink to="/searchTask" className="header__link"><span>Найти задание</span></NavLink></li>
                     <li><NavLink to="/performers" className="header__link"><span>Исполнители</span></NavLink></li>
-                    <li><NavLink to="/my-orders" className="header__link"><span>Мои заказы</span></NavLink></li>
+
+                    {/* <li><NavLink to="/my-orders" className="header__link"><span>Мои заказы</span></NavLink></li> */}
+                    <li><NavLink to="/pays" className="header__link"><span>Мои заказы</span></NavLink></li>
                 </div>
 
 
@@ -30,8 +32,8 @@ const Header = () => {
             <div className="header__user user">
 
                 <div className="user__reg">
-                    <Link to="/profile"><img src={user} alt="" className="user__icon user__icon_usr shake" /></Link>
                     <Link to="/"><img src={bell} alt="" className="user__icon user__icon_bl shake" /></Link>
+                    <Link to="/profile"><img src={user} alt="" className="user__icon user__icon_usr shake" /></Link>
                 </div>
 
                 {/* <div className="user__unreg">

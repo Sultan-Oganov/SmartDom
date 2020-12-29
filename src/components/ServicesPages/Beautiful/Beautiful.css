@@ -1,0 +1,31 @@
+.beautiful {
+    width: 90%;
+    margin: 80px auto;
+}
+.beautiful__img {
+    width: 55%;
+    margin: auto;
+}
+.beautiful__img img {
+    width: 100%;
+}
+.beautiful__title {
+    text-align: center;
+    font-weight: 700;
+    margin: 40px 0px 60px 0px;
+}
+.beautiful__btns {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.beautiful__btn {
+    background: #f4d962;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 25px;
+    color: #ffffff;
+    margin: 0px 0px 20px 0px;
+}

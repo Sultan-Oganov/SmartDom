@@ -1,0 +1,61 @@
+.myOrder {
+    width: 80%;
+    margin: 0 auto 50px;
+    display: flex;
+}
+.myOrder__wrapper {
+    flex: 0 1 70%;
+    margin: 120px 20px 0px 0px;
+}
+.myOrder__toggles {
+    background: #fff5cb;
+    padding: 25px 50px;
+}
+
+.myOrder__btns {
+    margin: 10px 0px 50px 0px;
+}
+.myOrder__btn {
+    padding: 10px 45px;
+    font-size: 15px;
+    background: #fff;
+    font-weight: 500;
+    color: #494d4e;
+}
+.myOrder__customer {
+    border-radius: 15px 0 0 15px;
+}
+.myOrder__executor {
+    border-radius: 0 15px 15px 0;
+}
+.myOrder__btn_active {
+    background: #494d4e;
+    color: #fff;
+}
+button {
+    outline: none !important;
+}
+
+.myOrder__img {
+    width: 40%;
+    margin: 50px auto 0px;
+}
+
+.myOrder__img img {
+    width: 100%;
+}
+.myOrder__text {
+    text-align: center;
+    font-size: 17px;
+    margin: 15px 0 0 0;
+    font-weight: 500;
+    color: #000000;
+}
+
+.myOrder .sidebar .sidebar__map {
+    margin: 0px 0px 5px 0px;
+}
+
+.myOrder__checkbox_text {
+    font-weight: 700;
+}

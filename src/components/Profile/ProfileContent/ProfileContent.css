@@ -1,0 +1,133 @@
+.profileContent {
+    flex: 0 1 70%;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+}
+.profileContent__top {
+    display: flex;
+    margin: 0px 0px 30px 0px;
+    justify-content: space-between;
+}
+.profileContent__name {
+    font-weight: 700;
+    font-size: 33px;
+}
+.profileContent__btns {
+    margin: 0px 0px 0px 0px;
+}
+.profileContent__customer {
+    border-radius: 15px 0 0 15px;
+}
+.profileContent__btn {
+    padding: 10px 45px;
+    font-size: 15px;
+    background: #fff;
+    font-weight: 500;
+    color: #494d4e;
+    border: 1px solid #494d4e;
+}
+.profileContent__btn_active {
+    background: #494d4e;
+    color: #fff;
+}
+.profileContent__executor {
+    border-radius: 0 15px 15px 0;
+}
+.profileContent__center {
+    display: flex;
+    width: 50%;
+    margin: 0px 0px 150px 0px;
+}
+.profileContent__photo {
+    flex: 0 1 50%;
+    width: 100%;
+    margin: 0px 20px 0px 0px;
+}
+.profileContent__photo_fake {
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    padding: 10px 0;
+}
+.label__photo_fake,
+.label__photo_fake label {
+    cursor: pointer !important;
+}
+.profileContent__photo img {
+    width: 100%;
+}
+.profileContent__addPhoto {
+    width: 100%;
+}
+.profileContent__camera {
+    width: 25px !important;
+    margin: 0px 0px 0px 20px !important;
+}
+.profileContent__photo_fake .fake__text {
+    margin: 0px 20px 0px 0px;
+    color: #a6a6a6;
+}
+.profileConten__feature {
+    flex: 0 1 25%;
+    margin: 30px 0px 0px 0px;
+}
+.profileContent__location {
+    display: flex;
+    margin: 0px 0px 10px 0px;
+}
+.profileContent__location h3 {
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+}
+.profileContent__location img {
+    width: 20px;
+    margin: 0px 10px 0px 0px;
+}
+.profileContent__likes {
+    font-size: 1.2em;
+}
+.profileContent__down {
+}
+.profile {
+}
+.profile__tabs {
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #c4c4c4;
+    padding: 0 0 10px 0;
+    margin: 0px 0px 30px 0px;
+}
+.tabs__leftBlock {
+    display: flex;
+    flex: 0 1 40%;
+    align-items: center;
+    justify-content: space-between;
+}
+.tabs__item {
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.tabs__item_active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    background-color: #f4d962;
+    box-sizing: content-box;
+    bottom: -15px;
+}
+.tabs__item img {
+    width: 25px;
+}
+.tabs__item_active {
+}
+.profile h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}

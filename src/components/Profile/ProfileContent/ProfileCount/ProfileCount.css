@@ -1,0 +1,85 @@
+.profileCount {
+    padding: 0 0 30px 0;
+}
+.profileCount__balance {
+    margin: 0px 0px 40px 0px !important;
+}
+.profileCount__history {
+    background: #fff5cb;
+    padding: 15px 20px;
+}
+.history {
+    margin: 0px 0px 40px 0px;
+}
+.history__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0px 0px 20px 0px;
+}
+.history__label {
+}
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #a6a6a6;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    width: 40%;
+}
+.dropdown__label {
+    margin: 0px 30px 0px 0px;
+    font-size: 20px;
+}
+.dropdown__arrow {
+}
+.history__center {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+}
+.history__btn {
+    padding: 5px 10px;
+    background: #fff;
+    border-radius: 5px;
+    color: #f4d962;
+    border: 1px solid #f4d962;
+}
+.history__func {
+    color: #f4d962;
+    text-decoration: underline !important;
+}
+.history__func:hover {
+    color: #000;
+}
+.history__down {
+}
+.history__transaction {
+    color: #a6a6a6;
+    font-weight: 500;
+    font-style: italic;
+}
+.profileCount__question {
+}
+.question {
+}
+.question__title {
+    margin: 0px 0px 20px 0px !important;
+    font-size: 30px !important;
+}
+.question__label {
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+}
+.question__text {
+    font-size: 15px;
+    width: 70%;
+    margin: 0px 0px 10px 0px;
+}
+.question__price {
+    margin: 10px 0px 0px 0px;
+}

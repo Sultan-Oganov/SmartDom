@@ -1,0 +1,31 @@
+.child {
+    width: 90%;
+    margin: 80px auto;
+}
+.child__img {
+    width: 55%;
+    margin: auto;
+}
+.child__img img {
+    width: 100%;
+}
+.child__title {
+    text-align: center;
+    font-weight: 700;
+    margin: 40px 0px 60px 0px;
+}
+.child__btns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 25%;
+    margin: auto;
+}
+.child__btn {
+    background: #f4d962;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 25px;
+    color: #ffffff;
+    margin: 0px 0px 20px 0px;
+}

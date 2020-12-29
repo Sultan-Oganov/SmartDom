@@ -12,7 +12,7 @@ const SearchContent = () => {
                 <SearchSorting />
             </div>
 
-            <Sidebar />
+            <Sidebar img="img" />
 
 
         </div>

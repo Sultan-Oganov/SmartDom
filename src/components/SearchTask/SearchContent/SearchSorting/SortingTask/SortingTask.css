@@ -24,6 +24,11 @@
     font-weight: 700;
     margin: 0px 0px 15px 0px;
 }
+.sortingTask__name img {
+    margin: 0px 0px 0px 10px;
+    width: 20px;
+    height: 20px;
+}
 .sortingTask__address {
     font-size: 15px;
     margin: 0px 0px 10px 0px;
@@ -83,4 +88,20 @@
     color: #a6a6a6;
     font-size: 15px;
     font-weight: 700;
+}
+.sortingTask__btn {
+    color: #f4d962;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 7px 20px;
+    margin-right: -35px;
+    border: 1px solid #f4d962;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.dis {
+    display: none;
+}
+.checkDis {
+    display: none;
 }

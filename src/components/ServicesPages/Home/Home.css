@@ -1,0 +1,31 @@
+.home {
+    width: 90%;
+    margin: 80px auto;
+}
+.home__img {
+    width: 55%;
+    margin: auto;
+}
+.home__img img {
+    width: 100%;
+}
+.home__title {
+    text-align: center;
+    font-weight: 700;
+    margin: 40px 0px 60px 0px;
+}
+.home__btns {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.home__btn {
+    background: #f4d962;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 25px;
+    color: #ffffff;
+    margin: 0px 0px 20px 0px;
+}

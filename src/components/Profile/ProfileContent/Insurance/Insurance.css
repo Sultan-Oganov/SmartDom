@@ -1,0 +1,11 @@
+.insurance {
+    width: 90%;
+}
+.insurance__label {
+    font-size: 25px !important;
+    margin: 0px 0px 20px 0px !important;
+}
+.insurance__text {
+    width: 90%;
+    font-size: 18px;
+}

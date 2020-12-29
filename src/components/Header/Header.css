@@ -122,7 +122,7 @@
     transition: all 0.3s ease 0s;
 }
 .header__link:hover {
-    color: #1c7c9b;
+    color: #000;
 }
 
 .header__link:hover span:after {
