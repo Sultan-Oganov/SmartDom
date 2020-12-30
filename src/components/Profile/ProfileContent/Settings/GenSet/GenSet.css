@@ -1,0 +1,116 @@
+.persone__label {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+.persData__title {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 25px 0px 20px 0px;
+}
+.persData__persone {
+    width: 100%;
+    border-bottom: 2px solid #c4c4c4;
+    width: 100%;
+}
+.persone__row {
+    margin-bottom: 20px;
+    color: #a6a6a6;
+}
+.persone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.persone__input_city {
+    width: 50%;
+    background: url("../../../../../image/searchTask/arrow.svg") 97% 50% / 25px 25px no-repeat;
+}
+
+.persone__input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: 1px solid #a6a6a6;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.persone__btn {
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.persone__btn_safe {
+    width: 70%;
+    background: #f4d962;
+    color: #fff;
+    border: none;
+    margin-bottom: 40px;
+}
+.persone__btn_delete {
+    margin-top: 25px;
+    width: 20%;
+    background: #fff;
+    color: #000;
+    border: 1px solid #a6a6a6;
+    transition: 0.3s 0s;
+}
+.persone__btn_delete:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.persone__input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.persone__input[type="tel"] {
+    margin: 0px 0px 10px 0px;
+}
+
+.persone__row_radio {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.persone__row_radio .persone__label {
+    flex: 0 1 100%;
+}
+.radio__row {
+    margin: 0px 30px 0px 0px;
+    display: flex;
+}
+.label__radio {
+    display: none;
+}
+.radio__fake {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.label__radio_fake {
+    align-self: center;
+    width: 20px;
+    height: 16px;
+    border: 1px solid #a6a6a6;
+    border-radius: 50%;
+    display: inline-block;
+    background: #fff;
+    transition: 0.01s 0s;
+}
+
+.label__radio:checked + .label__radio_fake {
+    background: url("../../../../../image/profile/Ellipse\ 12.png") center / 10px no-repeat;
+    border: 1px solid #f4d962;
+}
+.checkbox__text {
+    color: #494d4e;
+    display: inline-block;
+    margin: 15px 5px 15px;
+    font-size: 17px;
+    position: relative;
+}

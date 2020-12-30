@@ -1,0 +1,34 @@
+.settings {
+    flex: 0 1 70%;
+    width: 100%;
+    padding: 0px 0px 50px 0px;
+}
+.settings__tabs {
+    width: 55%;
+    margin: 0px 0px 50px 0px;
+    display: flex;
+    text-align: center;
+    border: 1px solid #a6a6a6;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.tabs__link {
+    border-right: 1px solid #a6a6a6;
+    width: 100%;
+    padding: 10px 15px;
+    color: #000;
+    background: #ffff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tabs__link_active {
+    background: #fff5cb;
+}
+
+.tabs__link:last-child {
+    border-right: none;
+}

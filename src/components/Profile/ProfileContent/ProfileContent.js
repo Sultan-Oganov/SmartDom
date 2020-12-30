@@ -7,6 +7,7 @@ import camera from '../../../image/task/camera.svg'
 import AboutMe from './AboutMe/AboutMe'
 import ProfileCount from './ProfileCount/ProfileCount'
 import Insurance from './Insurance/Insurance'
+import Settings from './Settings/Settings'
 
 const ProfileContent = () => {
     return (
@@ -59,9 +60,10 @@ const ProfileContent = () => {
                     <div className="tabs__item"><img src={gear} alt="" /></div>
                 </div>
 
-                <AboutMe />
+                {/* <AboutMe /> */}
                 {/* <ProfileCount /> */}
                 {/* <Insurance /> */}
+                <Settings />
 
             </div>
 

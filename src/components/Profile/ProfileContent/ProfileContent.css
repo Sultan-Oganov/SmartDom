@@ -100,7 +100,7 @@
 }
 .tabs__leftBlock {
     display: flex;
-    flex: 0 1 40%;
+    flex: 0 1 55%;
     align-items: center;
     justify-content: space-between;
 }

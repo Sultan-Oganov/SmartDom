@@ -1,0 +1,30 @@
+.notifications {
+    margin: 50px 0px 50px 0px;
+}
+.notifications__title {
+    font-weight: 700;
+    font-size: 30px;
+}
+.notifications__content {
+    margin: 20px 0px 0px 0px;
+}
+.notifications__text {
+    margin: 20px 0px 50px 0px;
+}
+.notifications__link {
+    color: #f4d962;
+    text-decoration: underline !important;
+}
+.notifications__link:hover {
+    color: #f4d962;
+    text-decoration: none !important;
+}
+.notifications_btn {
+    background: #f4d962;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 15px;
+    width: 25%;
+    color: #fff;
+    font-weight: 700;
+}
