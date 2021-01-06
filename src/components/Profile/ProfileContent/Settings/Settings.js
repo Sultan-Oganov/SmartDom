@@ -14,9 +14,9 @@ const Settings = () => {
                 <div className="tabs__link">Безопасность</div>
             </div>
 
-            {/* <GenSet /> */}
+            <GenSet />
             <Notifications />
-            {/* <Security /> */}
+            <Security />
         </div>
     )
 }

@@ -13,7 +13,6 @@
 .label input[type="text"] {
     width: 100%;
     background: #ffffff;
-    border: 1px solid #8d8d8d;
     box-sizing: border-box;
     border-radius: 10px;
     padding: 10px;
@@ -26,20 +25,32 @@
 }
 .multiple__inputs {
     display: flex;
-    border: 1px solid #a6a6a6;
-    border-radius: 10px;
-    background-color: #fff;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
-.taskForm__label_multiple input[type="text"] {
-    width: 25%;
+.multiple__row {
+    display: flex;
+    border: 1px solid #a6a6a6;
+    flex: 0 1 50%;
+    overflow: hidden;
+    background: #fff;
+}
+.multiple__row:nth-child(1) {
+    border-radius: 10px 0px 0px 10px;
+}
+.multiple__row:last-child {
+    border-radius: 0px 10px 10px 0px;
+}
+.multiple__row input[type="text"] {
+    flex: 0 1 50%;
     border: none;
     border-right: 1px solid #a6a6a6;
     border-radius: 10px 0px 0px 10px;
 }
+
 .taskForm__label_multiple input[type="text"]:last-child {
-    width: 25%;
-    border: none;
     border-radius: 10px;
+    border: none;
 }
 .taskForm__label input[type="text"]:focus {
     border: 1px solid #f4d962 !important;
@@ -81,15 +92,21 @@
     overflow: hidden;
     margin: 0 0 20px 0;
 }
-.label__fakes {
+.label__fakes,
+.label__fakes2 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     font-size: 10px;
 }
+.label__fakes2 {
+    display: none;
+    justify-content: flex-start;
+}
 .label__fake {
     border: 1px solid #a6a6a6;
     border-radius: 2px;
+    background: #fff;
     padding: 2px;
     margin: 0px 0px 0px 5px;
 }
@@ -136,4 +153,38 @@
     margin: 15px 5px 15px;
     font-size: 17px;
     position: relative;
+}
+
+@media (max-width: 568px) {
+    .multiple__inputs {
+        display: block;
+    }
+    .multiple__row {
+        margin: 10px 0px 0px 0px;
+        border-radius: 10px !important;
+    }
+    .multiple__row input[type="text"] {
+        flex: 0 1 50%;
+    }
+    .label__label_s {
+        width: 100%;
+    }
+    .label .label__input_s {
+        width: 60% !important;
+        display: inline-block !important;
+        margin: 10px 10px 0 0;
+    }
+    .textarea {
+        display: none;
+    }
+
+    .text-area textarea {
+        margin: 0;
+    }
+    .label__fakes {
+        display: none;
+    }
+    .label__fakes2 {
+        display: flex;
+    }
 }

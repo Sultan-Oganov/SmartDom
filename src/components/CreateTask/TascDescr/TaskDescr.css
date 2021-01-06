@@ -82,3 +82,8 @@
         font-size: 13px;
     }
 }
+@media (max-width: 768px) {
+    .taskDescr {
+        padding: 7rem 15px 0px;
+    }
+}

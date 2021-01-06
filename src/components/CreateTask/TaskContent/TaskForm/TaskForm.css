@@ -19,6 +19,45 @@
     margin: 15px 0px 0px 0px;
     font-weight: 500;
     font-size: 16px;
-
     color: #a6a6a6;
+}
+
+@media (max-width: 768px) {
+    .taskForm {
+        background: #fff5cb;
+        flex: 0 1 100%;
+    }
+    .taskForm__form {
+        margin: 0px auto 70px;
+        padding: 50px 0 0;
+    }
+    .yellow {
+        color: #f4d962;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+    .taskForm__title {
+        text-align: center;
+    }
+    .taskForm__descr {
+        margin: 15px 0px 0px 0px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #a6a6a6;
+    }
+}
+
+@media (max-width: 568px) {
+    .taskForm__title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 568px) {
+    .taskForm__form {
+        padding: 25px 0 0;
+    }
+    .taskForm__title {
+        font-size: 28px;
+    }
 }

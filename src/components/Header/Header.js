@@ -31,16 +31,16 @@ const Header = () => {
 
             <div className="header__user user">
 
-                <div className="user__reg">
+                {/* <div className="user__reg">
                     <Link to="/"><img src={bell} alt="" className="user__icon user__icon_bl shake" /></Link>
                     <Link to="/profile"><img src={user} alt="" className="user__icon user__icon_usr shake" /></Link>
-                </div>
+                </div> */}
 
-                {/* <div className="user__unreg">
+                <div className="user__unreg">
                     <Link to="/" className="user__link"><span>Вход</span></Link>
                 или
                 <Link to="/" className="user__link"><span>регистрация</span></Link>
-                </div> */}
+                </div>
             </div>
         </header >
     );

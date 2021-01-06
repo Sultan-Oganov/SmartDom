@@ -18,18 +18,29 @@ const Labels = () => {
             <label className="taskForm__label taskForm__label_multiple label">
                 <span className="label__text">Параметры посылки</span>
                 <div className="multiple__inputs">
-                    <input type="text"
-                        placeholder="Вес посылки"
-                    />
-                    <input type="text"
-                        placeholder="Длина, м"
-                    />
-                    <input type="text"
-                        placeholder="Ширина, м"
-                    />
-                    <input type="text"
-                        placeholder="Высота, м"
-                    />
+
+                    <div className="multiple__row">
+                        <input type="text"
+                            placeholder="Вес посылки"
+                            maxLength="5"
+                        />
+                        <input type="text"
+                            placeholder="Длина, м"
+                            maxLength="5"
+                        />
+                    </div>
+
+                    <div className="multiple__row">
+                        <input type="text"
+                            placeholder="Ширина, м"
+                            maxLength="5"
+                        />
+                        <input type="text"
+                            placeholder="Высота, м"
+                            maxLength="5"
+                        />
+                    </div>
+
                 </div>
 
             </label>
@@ -71,6 +82,24 @@ const Labels = () => {
                 </div>
 
 
+            </div>
+
+            <div className="label__fakes2">
+                <div className="label__fake label__photo_fake">
+                    <input type="file" className="input__photo" id="input__photo" />
+                    <label htmlFor="input__photo">
+                        <img src={camera} alt="" />
+                        <span className="fake__text">Добавить фото</span>
+                    </label>
+                </div>
+
+                <div className="label__fake label__card_fake">
+                    <input type="file" className="input__card" id="input__card" />
+                    <label htmlFor="input__card">
+                        <img src={card} alt="" />
+                        <span className="fake__text"> Приватная информация</span>
+                    </label>
+                </div>
             </div>
 
             <label className="taskForm__label label fake__checkbox">

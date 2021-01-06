@@ -13,7 +13,7 @@ const MyOrder = () => {
 
                     <div className="toggles__btns">
                         <button className="myOrder__customer myOrder__btn myOrder__btn_active">Я заказчик</button>
-                        <button className="myOrder__executor myOrder__btn">Я myOrderлнитель</button>
+                        <button className="myOrder__executor myOrder__btn">Я Исполнитель</button>
                     </div>
 
                     <label className="checkboxes__row">

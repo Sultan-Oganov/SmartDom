@@ -5,7 +5,7 @@ import Pay from '../components/Orders/Pays/Pay'
 const MyOrders = () => {
     return (
         <div>
-            {/* <MyOrder /> */}
+            <MyOrder />
             <Pay />
         </div>
     )

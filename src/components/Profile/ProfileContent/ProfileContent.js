@@ -60,9 +60,9 @@ const ProfileContent = () => {
                     <div className="tabs__item"><img src={gear} alt="" /></div>
                 </div>
 
-                {/* <AboutMe /> */}
-                {/* <ProfileCount /> */}
-                {/* <Insurance /> */}
+                <AboutMe />
+                <ProfileCount />
+                <Insurance />
                 <Settings />
 
             </div>

@@ -6,3 +6,10 @@
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 768px) {
+    .taskContent {
+        display: block;
+        width: 100%;
+        padding: 0px 0px 70px;
+    }
+}

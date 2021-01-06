@@ -19,12 +19,12 @@ import Beautiful from './components/ServicesPages/Beautiful/Beautiful'
 import Drivers from './components/ServicesPages/Drivers/Drivers'
 import Courier from './components/ServicesPages/Courier/Courier'
 
-
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Header />
+
         <Switch>
           <Route path="/" exact component={MainPage} />
 
@@ -34,7 +34,7 @@ function App() {
 
           <Route path='/performers' exact component={Performers} />
 
-          {/* <Route path='/my-orders' exact component={MyOrders} /> */}
+          <Route path='/my-orders' exact component={MyOrders} />
           <Route path='/pays' exact component={Pay} />
 
           <Route path='/profile' exact component={Profile} />
