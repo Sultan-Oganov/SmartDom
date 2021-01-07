@@ -34,7 +34,7 @@ const SortingTask = (props) => {
                 <div className="sortingTask__right-block">
                     <h2 className="sortingTask__price">{props.price}</h2>
                     <div className="sortingTask__user"><a href="#">{props.userName}</a></div>
-                    <div className="sortingTask__comment">{props.comment}</div>
+                    <button className="sortingTask__more">{props.more}</button>
                     <div className={props.btnDis ? 'dis' : ''}>
                         <button className="sortingTask__btn">{props.btn ? 'Получить оплату' : ''}</button>
                     </div>

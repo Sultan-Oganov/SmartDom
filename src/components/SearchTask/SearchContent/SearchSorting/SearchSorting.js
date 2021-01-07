@@ -26,7 +26,7 @@ const SearchSorting = () => {
                     workType="Регулярная работа"
                     price="До 3000 с"
                     userName="Урайымова Айдана"
-                    comment="Нет отзывов"
+                    more="Подробнее"
                 />
                 <SortingTask
                     ava="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
@@ -35,7 +35,7 @@ const SearchSorting = () => {
                     workType="Регулярная работа"
                     price="До 3000 с"
                     userName="Урайымова Айдана"
-                    comment="Нет отзывов"
+                    more="Подробнее"
                 />
                 <SortingTask
                     ava="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
@@ -44,7 +44,7 @@ const SearchSorting = () => {
                     workType="Регулярная работа"
                     price="До 3000 с"
                     userName="Урайымова Айдана"
-                    comment="Нет отзывов"
+                    more="Подробнее"
                 />
                 <SortingTask
                     ava="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
@@ -53,7 +53,7 @@ const SearchSorting = () => {
                     workType="Регулярная работа"
                     price="До 3000 с"
                     userName="Урайымова Айдана"
-                    comment="Нет отзывов"
+                    more="Подробнее"
                 />
                 <SortingTask
                     ava="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
@@ -62,7 +62,7 @@ const SearchSorting = () => {
                     workType="Регулярная работа"
                     price="До 3000 с"
                     userName="Урайымова Айдана"
-                    comment="Нет отзывов"
+                    more="Подробнее"
                 />
 
             </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Tabs, Tab, AppBar } from '@material-ui/core'
 import './ProfileContent.css'
 import photo from '../../../image/avatar.jpg'
 import gear from '../../../image/profile/gear.svg'
@@ -10,6 +11,13 @@ import Insurance from './Insurance/Insurance'
 import Settings from './Settings/Settings'
 
 const ProfileContent = () => {
+
+    const [value, setValue] = React.useState(0)
+    const handleTabs = (e, val) => {
+        console.log(val)
+        setValue(val)
+    }
+
     return (
         <div className="profileContent">
 
@@ -50,7 +58,21 @@ const ProfileContent = () => {
 
             <div className="profileContent__down profile">
 
-                <div className="profile__tabs tabs">
+                <AppBar position="static" className="profile__tabs tabs">
+                    <Tabs value={value} onChange={handleTabs} >
+                        <Tab label={<div className="tabs__item tabs__item_active">Обо мне</div>} className="tabs__item" />
+                        <Tab label={<div className="tabs__item">Счет</div>} className="tabs__item" />
+                        <Tab label={<div className="tabs__item">Страхование</div>} className="tabs__item" />
+                        <Tab label={<div className="tabs__item"><img src={gear} alt="" /></div>} className="tabs__item" />
+                    </Tabs>
+                </AppBar>
+
+                <TabPanel value={value} index={0}><AboutMe /></TabPanel>
+                <TabPanel value={value} index={1}><ProfileCount /></TabPanel>
+                <TabPanel value={value} index={2}><Insurance /></TabPanel>
+                <TabPanel value={value} index={3}><Settings /></TabPanel>
+
+                {/* <div className="profile__tabs tabs">
                     <div className="tabs__leftBlock">
                         <div className="tabs__item tabs__item_active">Обо мне</div>
                         <div className="tabs__item">Счет</div>
@@ -63,7 +85,7 @@ const ProfileContent = () => {
                 <AboutMe />
                 <ProfileCount />
                 <Insurance />
-                <Settings />
+                <Settings /> */}
 
             </div>
 
@@ -72,3 +94,14 @@ const ProfileContent = () => {
 }
 
 export default ProfileContent
+
+function TabPanel(props) {
+    const { children, value, index } = props
+    return (
+        <div>
+            {
+                value === index && children
+            }
+        </div>
+    )
+}

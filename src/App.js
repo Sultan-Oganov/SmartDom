@@ -18,38 +18,43 @@ import Grand from './components/ServicesPages/Grand/Grand'
 import Beautiful from './components/ServicesPages/Beautiful/Beautiful'
 import Drivers from './components/ServicesPages/Drivers/Drivers'
 import Courier from './components/ServicesPages/Courier/Courier'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import InfProfile from './components/InfrmProfile/InfProfile'
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Header />
+        <ScrollToTop>
+          <Switch>
+            <Route path="/" exact component={MainPage} />
 
-        <Switch>
-          <Route path="/" exact component={MainPage} />
+            <Route path='/createTask' exact component={CreateTask} />
 
-          <Route path='/createTask' exact component={CreateTask} />
+            <Route path='/searchTask' exact component={SearchTask} />
 
-          <Route path='/searchTask' exact component={SearchTask} />
+            <Route path='/performers' exact component={Performers} />
 
-          <Route path='/performers' exact component={Performers} />
+            <Route path='/my-orders' exact component={MyOrders} />
+            <Route path='/pays' exact component={Pay} />
 
-          <Route path='/my-orders' exact component={MyOrders} />
-          <Route path='/pays' exact component={Pay} />
+            <Route path='/profile' exact component={Profile} />
 
-          <Route path='/profile' exact component={Profile} />
+            <Route path='/Child' exact component={Child} />
+            <Route path='/Kitchen' exact component={Kitchen} />
+            <Route path='/Home' exact component={Home} />
+            <Route path='/Medicine' exact component={Medicine} />
+            <Route path='/Grand' exact component={Grand} />
+            <Route path='/Beautiful' exact component={Beautiful} />
+            <Route path='/Drivers' exact component={Drivers} />
+            <Route path='/Courier' exact component={Courier} />
 
-          <Route path='/Child' exact component={Child} />
-          <Route path='/Kitchen' exact component={Kitchen} />
-          <Route path='/Home' exact component={Home} />
-          <Route path='/Medicine' exact component={Medicine} />
-          <Route path='/Grand' exact component={Grand} />
-          <Route path='/Beautiful' exact component={Beautiful} />
-          <Route path='/Drivers' exact component={Drivers} />
-          <Route path='/Courier' exact component={Courier} />
+            <Route path='/InfProfile' exact component={InfProfile} />
 
-        </Switch>
-        <Footer />
+          </Switch>
+          <Footer />
+        </ScrollToTop>
       </BrowserRouter>
     </div>
   );

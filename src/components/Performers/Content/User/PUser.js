@@ -2,6 +2,7 @@ import React from 'react'
 import './PUser.css'
 import star from '../../../../image/perfomers/star.png'
 import like from '../../../../image/perfomers/like.svg'
+import { Link } from 'react-router-dom'
 
 const pUser = (props) => {
     return (
@@ -29,7 +30,7 @@ const pUser = (props) => {
             </div>
 
             <div className="pUser__right-block">
-                <h2 className="pUser__name">{props.name}</h2>
+                <Link to="/InfProfile" className="pUser__name">{props.name}</Link>
                 <div className="pUser__online">{props.online}</div>
                 <div className="pUser__descr">{props.descr}</div>
                 <button className="pUser__btn">Предложить задание</button>

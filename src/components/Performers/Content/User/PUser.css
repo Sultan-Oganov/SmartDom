@@ -43,6 +43,14 @@
 .pUser__name {
     font-size: 20px;
     font-weight: 700;
+    color: #000;
+    display: block;
+    width: 30%;
+    transition: 0.3s 0s;
+}
+.pUser__name:hover {
+    color: #000;
+    text-decoration: underline !important;
 }
 .pUser__online {
     font-size: 15px;

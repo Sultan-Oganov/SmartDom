@@ -84,10 +84,13 @@
     font-size: 15px;
     font-weight: 700;
 }
-.sortingTask__comment {
-    color: #a6a6a6;
+.sortingTask__more {
+    color: #fff;
     font-size: 15px;
     font-weight: 700;
+    background-color: #f4d962;
+    padding: 5px;
+    border-radius: 10px;
 }
 .sortingTask__btn {
     color: #f4d962;

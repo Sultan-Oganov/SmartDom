@@ -131,3 +131,8 @@
     font-weight: 700;
     margin: 0;
 }
+.MuiAppBar-colorPrimary {
+    color: black !important;
+    background-color: #fff !important;
+    box-shadow: none !important;
+}

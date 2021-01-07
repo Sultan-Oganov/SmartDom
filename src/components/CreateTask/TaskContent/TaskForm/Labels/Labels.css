@@ -89,7 +89,7 @@
     resize: none;
     display: block;
     border-radius: 10px;
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0 0 20px 0;
 }
 .label__fakes,
