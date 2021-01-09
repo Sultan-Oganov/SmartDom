@@ -1,0 +1,11 @@
+.success {
+    width: 100%;
+    padding: 50px 0px 0px;
+}
+.success__img {
+    width: 50%;
+    margin: auto;
+}
+.success__img img {
+    width: 100%;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tabs, Tab, AppBar } from '@material-ui/core'
+import { Tabs, Tab, AppBar, makeStyles } from '@material-ui/core'
 import './ProfileContent.css'
 import photo from '../../../image/avatar.jpg'
 import gear from '../../../image/profile/gear.svg'
@@ -17,6 +17,20 @@ const ProfileContent = () => {
         console.log(val)
         setValue(val)
     }
+
+    const useStyles = makeStyles(theme => ({
+        indicator: {
+            backgroundColor: "#f4d962",
+            height: "5px",
+            top: "45px",
+            zIndex: '100'
+        },
+        tabsWrapper: {
+            background: "#fff",
+        }
+    }));
+
+    const classes = useStyles();
 
     return (
         <div className="profileContent">
@@ -58,14 +72,25 @@ const ProfileContent = () => {
 
             <div className="profileContent__down profile">
 
+
                 <AppBar position="static" className="profile__tabs tabs">
-                    <Tabs value={value} onChange={handleTabs} >
-                        <Tab label={<div className="tabs__item tabs__item_active">Обо мне</div>} className="tabs__item" />
+                    <Tabs
+                        value={value}
+                        onChange={handleTabs}
+                        className={classes.tabsWrapper}
+                        TabIndicatorProps={{ className: classes.indicator }}
+                    >
+
+                        <Tab label={<div className="tabs__item">Обо мне</div>} className="tabs__item" />
                         <Tab label={<div className="tabs__item">Счет</div>} className="tabs__item" />
                         <Tab label={<div className="tabs__item">Страхование</div>} className="tabs__item" />
                         <Tab label={<div className="tabs__item"><img src={gear} alt="" /></div>} className="tabs__item" />
+
                     </Tabs>
+
                 </AppBar>
+
+
 
                 <TabPanel value={value} index={0}><AboutMe /></TabPanel>
                 <TabPanel value={value} index={1}><ProfileCount /></TabPanel>

@@ -1,0 +1,121 @@
+.ChangeTask {
+    display: flex;
+    border-bottom: 1px solid #000;
+    padding: 30px 70px;
+    position: relative;
+}
+.ChangeTask:last-child {
+    border-bottom: none;
+}
+.ChangeTask__left-block {
+    width: 10%;
+    margin: 0px 10px 0px 0px;
+}
+.ChangeTask__icon {
+    width: 80% !important;
+}
+.ChangeTask__decsr {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.ChangeTask__center {
+}
+.ChangeTask__name {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+}
+.ChangeTask__name img {
+    margin: 0px 0px 0px 10px;
+    width: 20px;
+    height: 20px;
+}
+.ChangeTask__address {
+    font-size: 15px;
+    margin: 0px 0px 10px 0px;
+}
+.ChangeTask__workType {
+    font-size: 15px;
+    margin: 0px 0px 15px 0px;
+}
+.ChangeTask__func {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.ChangeTask__func img {
+    margin: 0px 10px 0px 0px;
+}
+.ChangeTask__shield {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px 0px 0px;
+    cursor: pointer;
+}
+.ChangeTask__shield img {
+    height: 20px;
+}
+.ChangeTask__card img {
+    width: 25px;
+}
+.ChangeTask__services {
+    font-size: 12px;
+    font-weight: 700;
+    color: #455a64;
+}
+.ChangeTask__card {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.ChangeTask__right-block {
+    text-align: right;
+}
+.ChangeTask__price {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px 0px 10px 0px;
+}
+.ChangeTask__user {
+    margin: 0px 0px 15px 0px;
+}
+.ChangeTask__user a {
+    color: #f4d962;
+    text-decoration: underline !important;
+    font-size: 15px;
+    font-weight: 700;
+}
+.ChangeTask__more {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #f4d962;
+    padding: 5px;
+    border-radius: 10px;
+}
+.ChangeTask__btn {
+    color: #f4d962;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 7px 20px;
+    margin-right: -35px;
+    border: 1px solid #f4d962;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.ChangeTask__change-btn {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+}
+.ChangeTask__change-btn img {
+    cursor: pointer;
+    width: 17px;
+}
+[data-trash] {
+    margin: 0px 0px 20px 0px;
+}
+[data-edit] {
+}

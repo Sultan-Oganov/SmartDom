@@ -20,6 +20,7 @@ import Drivers from './components/ServicesPages/Drivers/Drivers'
 import Courier from './components/ServicesPages/Courier/Courier'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import InfProfile from './components/InfrmProfile/InfProfile'
+import ModerChange from './components/ModerChange/ModerChange';
 
 function App() {
   return (
@@ -51,6 +52,8 @@ function App() {
             <Route path='/Courier' exact component={Courier} />
 
             <Route path='/InfProfile' exact component={InfProfile} />
+
+            <Route path='/change' exact component={ModerChange} />
 
           </Switch>
           <Footer />

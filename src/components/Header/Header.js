@@ -24,6 +24,8 @@ const Header = () => {
 
                     {/* <li><NavLink to="/my-orders" className="header__link"><span>Мои заказы</span></NavLink></li> */}
                     <li><NavLink to="/pays" className="header__link"><span>Мои заказы</span></NavLink></li>
+
+                    <li><NavLink to="/change" className="header__link"><span>Moder Change</span></NavLink></li>
                 </div>
 
 

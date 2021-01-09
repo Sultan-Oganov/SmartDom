@@ -1,0 +1,77 @@
+.regUsers {
+    width: 100%;
+    padding: 120px 0 100px 0;
+    position: relative;
+}
+.regUsers__img_top,
+.regUsers__img_bot {
+    position: absolute;
+    z-index: -1;
+    width: 400px;
+}
+.regUsers__img_top {
+    top: 70px;
+    left: 0;
+}
+.regUsers__img_bot {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.regUsers__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+}
+
+.tableUsers {
+    border: 2px solid #a6a6a6;
+    border-radius: 10px;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    background-color: #ffffff;
+}
+table {
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+tbody tr {
+    border: 1px solid #a6a6a6;
+    border-right: none;
+    border-left: none;
+}
+.tableUsers td,
+.tableUsers th {
+    border-right: 1px solid #a6a6a6;
+    padding: 10px 15px;
+}
+.tableUsers td:last-child,
+.tableUsers th:last-child {
+    border-right: none;
+}
+.tableUsers tbody td {
+    font-size: 17px;
+    color: #000000;
+}
+.tableUsers thead {
+    background: #ffffff;
+}
+.tableUsers thead th {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+.tableUsers__block {
+    cursor: pointer;
+    color: #a6a6a6 !important;
+}
+.tableUsers__block img {
+    margin: 0px 10px 0px 0px;
+}

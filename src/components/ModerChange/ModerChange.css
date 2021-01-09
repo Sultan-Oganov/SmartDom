@@ -1,0 +1,41 @@
+.moderChange {
+    width: 90%;
+    margin: auto;
+    padding: 120px 0px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.moderChange__search {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin: 0px 0px 20px 0px;
+}
+.moderChange__search input {
+    flex: 0 1 90%;
+}
+.moderChange__search img {
+    flex: 0 1 1%;
+}
+.moderChange__column {
+    flex: 0 1 70%;
+    margin: 0px 20px 0px 0px;
+}
+.moderChange__task {
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.moderChange .sidebar {
+    margin: 0px 0px 0px 20px;
+}
+.moderChange .sidebar__map {
+    display: none;
+}

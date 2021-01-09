@@ -1,5 +1,6 @@
 import React from 'react'
 import './SortingTask.css'
+import { Link } from 'react-router-dom'
 import icon from '../../../../../image/avatar.jpg'
 import shield from '../../../../../image/searchTask/shield.svg'
 import card from '../../../../../image/searchTask/card.svg'
@@ -33,7 +34,7 @@ const SortingTask = (props) => {
                 </div>
                 <div className="sortingTask__right-block">
                     <h2 className="sortingTask__price">{props.price}</h2>
-                    <div className="sortingTask__user"><a href="#">{props.userName}</a></div>
+                    <div className="sortingTask__user"><Link to="/infProfile">{props.userName}</Link></div>
                     <button className="sortingTask__more">{props.more}</button>
                     <div className={props.btnDis ? 'dis' : ''}>
                         <button className="sortingTask__btn">{props.btn ? 'Получить оплату' : ''}</button>
