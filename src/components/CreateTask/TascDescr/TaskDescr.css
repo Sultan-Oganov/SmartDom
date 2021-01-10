@@ -13,12 +13,14 @@
 }
 .taskDescr__text {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     color: #000000;
-    width: 50%;
+    width: 90%;
     margin: auto;
 }
 .taskDescr__column {
-    flex: 0 1 50%;
+    flex: 0 1 25%;
     display: flex;
 }
 .taskDescr__num {

@@ -6,7 +6,7 @@ const Notifications = () => {
         <div className="notifications">
             <h2 className="notifications__title">Получать уведомления:</h2>
 
-            <div class="notifications__content">
+            <div className="notifications__content">
 
                 <label className="checkboxes__row">
                     <input type="checkbox" className="label__checkbox" />

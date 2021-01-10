@@ -1,5 +1,6 @@
 import React from 'react'
 import './Contacts.css'
+import { Link } from 'react-router-dom'
 import qstn from '../../../../../image/task/queistion.svg'
 
 const Contacts = () => {
@@ -9,9 +10,9 @@ const Contacts = () => {
 
             <input type="tel" className="contacts__input" placeholder="Ваш телефон" />
 
-            <button className="contacts__btn">
+            <Link to="/performers" className="contacts__btn">
                 Разместить заявку
-            </button>
+            </Link>
 
             <label className="contacts__checkbox">
                 <input type="checkbox" className="label__checkbox" />

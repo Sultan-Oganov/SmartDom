@@ -3,7 +3,7 @@ import './Pay.css'
 import Sidebar from '../../SearchTask/SearchContent/Sidebar/Sidebar'
 import SortingTask from '../../SearchTask/SearchContent/SearchSorting/SortingTask/SortingTask'
 import check from '../../../image/icon/check.svg'
-
+import Dropdown from 'react-bootstrap/Dropdown'
 
 const Pay = () => {
     return (
@@ -17,11 +17,18 @@ const Pay = () => {
                         <button className="pay__executor pay__btn">Я исполнитель</button>
                     </div>
 
-                    <label className="checkboxes__row">
-                        <input type="checkbox" className="label__checkbox" />
-                        <div className="checkboxes__fake label__checkbox_fake"></div>
-                        <div className="checkboxes__text pay__checkbox_text">Бизнес задания</div>
-                    </label>
+                    <Dropdown>
+                        <Dropdown.Toggle variant="warning" id="dropdown-basic">
+                            Денежный перевод
+                    </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">Принято</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">В процессе</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Ожидает</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Отменено</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
 
                 </div>
 
@@ -45,7 +52,6 @@ const Pay = () => {
                 </div>
 
             </div>
-            <Sidebar />
         </div>
     )
 }

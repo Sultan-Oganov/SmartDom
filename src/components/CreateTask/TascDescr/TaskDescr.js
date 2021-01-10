@@ -20,7 +20,21 @@ const TaskDescr = () => {
                         <div className="taskDescr__label">Выберите исполнителя</div>
                         <div className="taskDescr__descr">Выберите подходящего для вас предложение по цене или рейтингу исполнителя.</div>
                     </div>
+                </div>
+                <div className="taskDescr__column">
+                    <div className="taskDescr__num">3.</div>
+                    <div className="taskDescr__txt taskDescr__txt_s">
+                        <div className="taskDescr__label">Заполните заявку</div>
+                        <div className="taskDescr__descr">Мы быстро оповестим исполнителей <strong>Smart</strong> <span>DOM</span> о вашей заявке.</div>
+                    </div>
 
+                </div>
+                <div className="taskDescr__column">
+                    <div className="taskDescr__num">4.</div>
+                    <div className="taskDescr__txt">
+                        <div className="taskDescr__label">Выберите исполнителя</div>
+                        <div className="taskDescr__descr">Выберите подходящего для вас предложение по цене или рейтингу исполнителя.</div>
+                    </div>
                 </div>
             </div>
         </div>

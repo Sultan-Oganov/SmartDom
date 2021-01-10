@@ -71,6 +71,31 @@
     font-size: 15px;
     width: 85%;
 }
+.adress__filter {
+    width: 50%;
+    display: flex;
+    border-radius: 10px;
+    background: #a6a6a6;
+    overflow: hidden;
+    box-sizing: content-box;
+    margin: 10px 0px 10px 0px;
+}
+.adress__filter input {
+    background: none;
+    height: 100%;
+    background-color: #fff;
+    padding: 5px;
+}
+.adress__filter input.adress__filter_standard {
+    border-right: 1px solid #000 !important;
+    flex: 0 1 50%;
+    width: 100%;
+    background: #c4c4c4;
+}
+.adress__filter input.adress__filter_premium {
+    flex: 0 1 50%;
+    width: 100%;
+}
 .checkboxes__links {
     margin: 0 0 0 30px;
 }

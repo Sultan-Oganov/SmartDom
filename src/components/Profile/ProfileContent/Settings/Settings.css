@@ -4,9 +4,10 @@
     padding: 0px 0px 50px 0px;
 }
 .settings__tabs {
-    width: 55%;
+    width: 35% !important;
     margin: 0px 0px 50px 0px;
-    display: flex;
+    display: flex !important;
+    justify-content: space-between;
     text-align: center;
     border: 1px solid #a6a6a6;
     overflow: hidden;
@@ -14,19 +15,14 @@
 }
 
 .tabs__link {
-    border-right: 1px solid #a6a6a6;
     width: 100%;
-    padding: 10px 15px;
+    font-size: 10px !important;
+    padding: 10px;
     color: #000;
-    background: #ffff;
+    z-index: 5;
     text-align: center;
-    font-size: 15px;
     font-weight: 700;
     cursor: pointer;
-}
-
-.tabs__link_active {
-    background: #fff5cb;
 }
 
 .tabs__link:last-child {

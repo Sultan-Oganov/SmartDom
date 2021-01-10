@@ -1,4 +1,5 @@
 .aboutMe {
+    width: 100%;
 }
 .aboutMe__block {
     margin: 0px 0px 30px 0px;
@@ -13,8 +14,6 @@
     margin: 0px 0px 0px 50px !important;
     background: transparent;
 }
-.aboutMe__secondBlock {
-}
 .aboutMe__text {
     color: #a6a6a6;
     font-size: 15px;
@@ -25,37 +24,4 @@
     color: #f4d962;
     font-size: 15px;
     font-weight: 700;
-}
-.aboutMe__thirdBlock {
-}
-.aboutMe__fourthBlock {
-}
-.aboutMe__down {
-    margin: 100px 0px 70px 0px;
-}
-.aboutMe__warn {
-}
-.warn {
-    width: 60%;
-    font-size: 15px;
-    font-weight: 700;
-    background-color: #fff5cb;
-    padding: 15px;
-}
-.warn__text {
-    margin: 0px 0px 15px 0px;
-}
-.warn__btn {
-    background: #ffffff;
-    border: 1px solid #494d4e;
-    box-sizing: border-box;
-    padding: 10px 15px;
-    border-radius: 10px;
-    font-size: 17px;
-    font-weight: 700;
-    color: #494d4e;
-    transition: 0.3s 0s;
-}
-.warn__btn:hover {
-    background-color: rgb(239, 239, 239);
 }

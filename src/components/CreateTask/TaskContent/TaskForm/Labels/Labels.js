@@ -45,17 +45,6 @@ const Labels = () => {
 
             </label>
 
-            <div className="taskForm__label label">
-                <label className="label__label_s" htmlFor="label__input_s">
-                    <span className="label__text">
-                        Ценность посылки, сом
-                    </span>
-                </label>
-                <input type="text" className="label__input_s" id="label__input_s" />
-
-                <img src={qstn} alt="" />
-            </div>
-
             <label htmlFor="textarea" className="textarea">
                 <span className="label__text">Опишите пожелания и детали, чтобы исполнители лучше оценили вашу задачу</span>
             </label>
@@ -101,15 +90,6 @@ const Labels = () => {
                     </label>
                 </div>
             </div>
-
-            <label className="taskForm__label label fake__checkbox">
-                <input type="checkbox" className="label__checkbox" />
-                <span className="label__checkbox_fake"></span>
-                <span className="label__text checkbox__text">
-                    Забрать у получателя плату за товар и вернуть заказчику
-                    </span>
-                <img src={qstn} alt="" />
-            </label>
 
         </div>
     )

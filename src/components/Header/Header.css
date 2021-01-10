@@ -5,7 +5,7 @@
     box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.5);
     color: #494d4e;
     font-family: "Roboto", sans-serif;
-    z-index: 5;
+    z-index: 15;
     position: fixed;
     width: 100%;
     background-color: #fff;

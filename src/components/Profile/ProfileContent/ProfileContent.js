@@ -5,8 +5,11 @@ import photo from '../../../image/avatar.jpg'
 import gear from '../../../image/profile/gear.svg'
 import location from '../../../image/profile/location.svg'
 import camera from '../../../image/task/camera.svg'
+import star from '../../../image/perfomers/star.png'
 import AboutMe from './AboutMe/AboutMe'
+import Rating from './Rating/Rating'
 import ProfileCount from './ProfileCount/ProfileCount'
+import Promotion from './Promotion/Promotion'
 import Insurance from './Insurance/Insurance'
 import Settings from './Settings/Settings'
 
@@ -23,7 +26,6 @@ const ProfileContent = () => {
             backgroundColor: "#f4d962",
             height: "5px",
             top: "45px",
-            zIndex: '100'
         },
         tabsWrapper: {
             background: "#fff",
@@ -64,7 +66,21 @@ const ProfileContent = () => {
                         <h3>Бишкек</h3>
                     </div>
                     <div className="profileContent__likes">
-                        Нет оценок
+                        <span>Рейтинг</span>
+                        <div className="profileConten__stars">
+                            <img src={star} alt="" />
+                            <img src={star} alt="" />
+                            <img src={star} alt="" />
+                            <img src={star} alt="" />
+                            <img src={star} alt="" />
+                        </div>
+                    </div>
+                    <div className="profileConten__commentCount">
+                        <span>Отзывов</span>
+                        <div className="commentCount__row">
+                            <div className="commentCount__like">"+"</div>
+                            <div className="commentCount__dis">"-"</div>
+                        </div>
                     </div>
                 </div>
 
@@ -82,7 +98,9 @@ const ProfileContent = () => {
                     >
 
                         <Tab label={<div className="tabs__item">Обо мне</div>} className="tabs__item" />
-                        <Tab label={<div className="tabs__item">Счет</div>} className="tabs__item" />
+                        <Tab label={<div className="tabs__item">Рейтинг и отзывы</div>} className="tabs__item" />
+                        <Tab label={<div className="tabs__item">Баланс</div>} className="tabs__item" />
+                        <Tab label={<div className="tabs__item">Продвижение аккаунта</div>} className="tabs__item" />
                         <Tab label={<div className="tabs__item">Страхование</div>} className="tabs__item" />
                         <Tab label={<div className="tabs__item"><img src={gear} alt="" /></div>} className="tabs__item" />
 
@@ -93,24 +111,12 @@ const ProfileContent = () => {
 
 
                 <TabPanel value={value} index={0}><AboutMe /></TabPanel>
-                <TabPanel value={value} index={1}><ProfileCount /></TabPanel>
-                <TabPanel value={value} index={2}><Insurance /></TabPanel>
-                <TabPanel value={value} index={3}><Settings /></TabPanel>
+                <TabPanel value={value} index={1}><Rating /></TabPanel>
+                <TabPanel value={value} index={2}><ProfileCount /></TabPanel>
+                <TabPanel value={value} index={3}><Promotion /></TabPanel>
+                <TabPanel value={value} index={4}><Insurance /></TabPanel>
+                <TabPanel value={value} index={5}><Settings /></TabPanel>
 
-                {/* <div className="profile__tabs tabs">
-                    <div className="tabs__leftBlock">
-                        <div className="tabs__item tabs__item_active">Обо мне</div>
-                        <div className="tabs__item">Счет</div>
-                        <div className="tabs__item">Страхование</div>
-                    </div>
-
-                    <div className="tabs__item"><img src={gear} alt="" /></div>
-                </div>
-
-                <AboutMe />
-                <ProfileCount />
-                <Insurance />
-                <Settings /> */}
 
             </div>
 

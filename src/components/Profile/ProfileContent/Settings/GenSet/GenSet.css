@@ -17,11 +17,25 @@
     margin-bottom: 20px;
     color: #a6a6a6;
 }
+.persone__row textarea {
+    resize: none;
+}
 .persone {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
+}
+.persone__checkboxes-wrap {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+.persone__checkboxes {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .persone__input_city {
@@ -35,14 +49,27 @@
     font-size: 15px;
     border: 1px solid #a6a6a6;
     border-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.MuiInput-underline:after {
+    display: none;
+    visibility: hidden;
+}
+.MuiInput-underline:not(.Mui-disabled):before {
+    border: none !important;
+}
+.MuiSelect-root,
+.MuiSelect-select,
+.MuiSelect-selectMenu,
+.MuiInputBase-input,
+.MuiInput-input {
+    background: none !important;
+    border: none !important;
 }
 .persone__btn {
     padding: 10px 15px;
     font-size: 15px;
     font-weight: 700;
     border-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .persone__btn_safe {
@@ -113,4 +140,7 @@
     margin: 15px 5px 15px;
     font-size: 17px;
     position: relative;
+}
+.persData .label__checkbox_fake {
+    width: 25px !important;
 }

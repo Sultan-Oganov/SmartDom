@@ -3,9 +3,12 @@
     margin: 0 auto 50px;
     display: flex;
 }
+.pay .sortingTask__more {
+    display: none;
+}
 .pay__wrapper {
-    flex: 0 1 70%;
-    margin: 120px 20px 0px 0px;
+    flex: 0 1 100%;
+    margin: 120px 0px 0px 0px;
 }
 .pay__toggles {
     background: #fff5cb;
@@ -13,7 +16,10 @@
 }
 
 .pay__btns {
-    margin: 10px 0px 50px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 50px;
 }
 .pay__btn {
     padding: 10px 45px;
@@ -21,6 +27,14 @@
     background: #fff;
     font-weight: 500;
     color: #f4d962;
+}
+.dropdown {
+    background: none !important;
+    border: none !important;
+    justify-content: center !important;
+    width: 20% !important;
+    margin: auto;
+    display: block !important;
 }
 .pay__customer {
     border-radius: 15px 0 0 15px;

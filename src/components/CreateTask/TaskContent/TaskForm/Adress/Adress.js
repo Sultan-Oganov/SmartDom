@@ -43,11 +43,11 @@ const Adress = () => {
                     <div className="checkboxes__fake label__checkbox_fake"></div>
                     <div className="checkboxes__text">Отдаю предпочтение застрахованным исполнителям </div>
                 </label>
-                <label className="checkboxes__row">
-                    <input type="checkbox" className="label__checkbox" />
-                    <div className="checkboxes__fake label__checkbox_fake"></div>
-                    <div className="checkboxes__text">Исполнитель должен иметь документы для оформления расписки/ доверенности</div>
-                </label>
+
+                <div className="adress__filter">
+                    <input type="text" className="adress__filter_standard" value="Standard" disabled />
+                    <input type="text" className="adress__filter_premium" value="Premium" disabled />
+                </div>
 
                 <div className="checkboxes__links">
                     <a href=""><span className="yellow">Посмотреть пример расписки </span></a>

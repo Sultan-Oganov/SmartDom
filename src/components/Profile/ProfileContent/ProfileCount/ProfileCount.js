@@ -6,9 +6,18 @@ const ProfileCount = () => {
     return (
         <div className="profileCount">
 
-            <h3 className="profileCount__balance">
-                Ваш баланс 0 бонусов
-            </h3>
+            <div className="profileCount__balance">
+
+                <h3 className="profileCount__balance_item">
+                    Ваш баланс 0 сом
+                </h3>
+
+                <h3 className="profileCount__balance_item">
+                    Ваш баланс 0 бонусов
+                </h3>
+
+            </div>
+
 
             <div className="profileCount__history history">
 
@@ -16,11 +25,11 @@ const ProfileCount = () => {
 
                     <h3 className="history__label">История операций</h3>
 
-                    <div className="dropdown">
-                        <div className="dropdown__label">
+                    <div className="history__dropdown">
+                        <div className="history__dropdown__label">
                             За месяц
                         </div>
-                        <img src={arrow} alt="" className="dropdown__arrow" />
+                        <img src={arrow} alt="" className="history__dropdown__arrow" />
                     </div>
 
                 </div>
@@ -45,11 +54,18 @@ const ProfileCount = () => {
                     Бонусы <strong>Smart DOM</strong>
                 </div>
                 <div className="question__text">
-                    Бонусы можно использовать для оплаты работы исполнителей. Бонусы ельзя вывести
+                    Бонусы можно использовать для оплаты работы исполнителей. Бонусы нельзя вывести
                     со счета
                 </div>
-                <h3 className="question__label">Какая минимальная сумма для пополнения счета?</h3>
+
+                <h3 className="question__subtitle">Какая минимальная сумма для пополнения счета?</h3>
                 <div className="question__price">500 сомов</div>
+
+                <h3 className="question__subtitle">Как пополнить баланс?</h3>
+                <div className="question__variant">
+                    <a href="#">ЭлСом</a>
+                    <a href="#">Visa</a>
+                </div>
             </div>
 
         </div>

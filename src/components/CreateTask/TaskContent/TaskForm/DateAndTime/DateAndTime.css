@@ -3,7 +3,8 @@
 }
 .dateAndTime__text {
 }
-.taskForm__startWork {
+.taskForm__startWork,
+.dateAndTime__calendar {
     background: #ffffff;
     border: 1px solid #a6a6a6;
     border-radius: 10px;
@@ -11,13 +12,14 @@
     padding: 5px;
     margin: 0 5px 0 0;
 }
+.dateAndTime__calendar {
+    margin-left: 5px;
+}
 /* ::-webkit-inner-spin-button,
 ::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
 } */
-.dateAndTime {
-}
 #date {
     border-right: 1px solid #4f4f4f;
 }
