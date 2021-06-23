@@ -1,16 +1,19 @@
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import {Button} from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
+import Snackbar from '@material-ui/core/Snackbar';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
 import MuiDialogActions from '@material-ui/core/DialogActions';
+import MuiAlert from '@material-ui/lab/Alert';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
 import './Modal.css'
-import { Link } from 'react-router-dom'
-
+import { Link, useHistory } from 'react-router-dom'
+import axios from 'axios'
+import {API_REG, API_AUTH, RESSET_PASS} from '../../config'
 const styles = (theme) => ({
     root: {
         margin: 0,
@@ -23,7 +26,9 @@ const styles = (theme) => ({
         color: theme.palette.grey[500],
     },
 });
-
+function Alert(props) {
+    return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
 const DialogTitle = withStyles(styles)((props) => {
     const { children, classes, onClose, ...other } = props;
     return (
@@ -51,32 +56,133 @@ const DialogActions = withStyles((theme) => ({
     },
 }))(MuiDialogActions);
 
-const Modal = () => {
-    const [open, setOpen] = React.useState(false);
+const Modal = (props) => {
+    const [diss, setDiss] = useState(true)
+    const [name, setName] = useState()
+    const [email, setEmail] = useState()
+    const [pass, setPass] = useState()
+    const [status, setStatus] = useState('')
+    const [statusMessage, setStatusMessage] = useState('')
+    const [open, setOpen] = useState(false)
+    const [resetPass,setReset] = useState(false)
+    const history = useHistory()
 
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
-    const handleClose = () => {
-        setOpen(false);
-    };
+    const reset = () =>{
+        setPass('')
+        setEmail('')
+        setName('')
+        setOpen(false)
+    }
 
-    const [auth, setAuth] = React.useState(false);
+    const registration = async (e)=>{
+        e.preventDefault()
+        alert('')
+        let data = {
+            username:name,
+            email:email,
+            password1:pass,
+            password2:pass
+        }
+        console.log(data)
+        const url = API_REG;
+        
+        try {
+        const response = await fetch(url, {
 
-    const handleClickOpenAuth = () => {
-        setAuth(true);
-    };
-    const handleCloseAuth = () => {
-        setAuth(false);
-    };
-
+            method: 'POST', // или 'PUT'
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)// данные могут быть 'строкой' или {объектом}!
+            
+        });
+        const json = await response.json();
+            console.log(json);
+            if(json.username){
+                setOpen(true)
+                setStatus('warning')
+                setStatusMessage(json.username[0])
+            }
+            else if(json.email){
+                setOpen(true)
+                setStatus('warning')
+                setStatusMessage(json.email[0])
+            }
+            else if(json.password1){
+                setOpen(true)
+                setStatus('warning')
+                setStatusMessage(json.password1[0])
+            }
+            else{
+                setOpen(true)
+                setStatus('success')
+                setStatusMessage(json.detail)
+            }
+            
+        } catch (error) {
+            console.error('Ошибка:', error);
+        }
+    }
+    const authorization = async (e)=>{
+        e.preventDefault()
+        alert('')
+        
+        let data = {
+            email:email,
+            password:pass
+        }
+        let resetData = {
+            email:email,
+        }
+        let url = resetPass ? RESSET_PASS :API_AUTH
+        try {
+            const response = await fetch(url, {
+    
+                method: 'POST', // или 'PUT'
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(resetPass ? resetData: data)
+                
+            });
+            const json = await response.json();
+                console.log(json);
+                if(json.email){
+                    setOpen(true)
+                    setStatus('warning')
+                    setStatusMessage(json.email[0])
+                }
+                else if(json.password){
+                    setOpen(true)
+                    setStatus('warning')
+                    setStatusMessage(json.password[0])
+                }
+                else if(json.non_field_errors){
+                    setOpen(true)
+                    setStatus('warning')
+                    setStatusMessage(json.non_field_errors[0])
+                }  else {
+                    if(resetPass){
+                        setOpen(true)
+                        setStatus('success')
+                        setStatusMessage(json.detail)
+                    }else{
+                        localStorage.setItem('tokensmart', json.key)
+                        history.push('/profile')
+                        window.location.reload()
+                        props.handleClose()
+                    }
+                    
+                }  
+            } catch (error) {
+                console.error('Ошибка:', error);
+            }
+    }
     return (
         <div>
-            <Button variant="outlined" color="primary" onClick={handleClickOpenAuth}>
-                Регистрация
-            </Button>
-            <Dialog className="modal" onClose={handleCloseAuth} aria-labelledby="customized-dialog-title" open={auth}>
-                <DialogTitle className="modal__title" id="customized-dialog-title" onClose={handleCloseAuth}></DialogTitle>
+            
+            <Dialog className="moda" onClose={props.handleCloseReg} aria-labelledby="customized-dialog-title" open={props.openReg}>
+                <DialogTitle className="modal__title" id="customized-dialog-title" onClose={props.handleCloseReg}></DialogTitle>
                 <DialogContent className="modal__content">
 
                     <div className="modal__wrapper">
@@ -93,22 +199,49 @@ const Modal = () => {
                             </div>
 
                         </div>
+                        <form onSubmit={registration}>
+                            <div className="modal__center">
+                                <div className="modal__title">Или по электронной почте</div>
 
-                        <div className="modal__center">
-                            <div className="modal__title">Или по электронной почте</div>
 
+                                <label htmlFor="userName" className="modal__label">Имя</label>
+                                <input 
+                                    id="userName" 
+                                    className="modalInp" 
+                                    type="text" 
+                                    value={name}
+                                    onChange={(e)=>setName(e.target.value)}
+                                    required />
 
-                            <label htmlFor="modalEmail" className="modal__label">Электронная почта</label>
+                                <label htmlFor="modalEmail" className="modal__label">Электронная почта</label>
+                                <input 
+                                    id="modalEmail" 
+                                    className="modalInp" 
+                                    type="email" 
+                                    value={email}
+                                    onChange={(e)=>setEmail(e.target.value)}
+                                    required />
 
-                            <input id="modalEmail" className="modalInp" type="email" required />
-                        </div>
+                                <label htmlFor="pass" className="modal__label">Пароль</label>
+                                <input 
+                                    id="pass"
+                                    className="modalInp" 
+                                    type="password" 
+                                    value={pass}
+                                    minLength={8}
+                                    onChange={(e)=>setPass(e.target.value)}
+                                    required />
+                            </div>
+                                <button className="modal__btn" disabled={diss} >Зарегестрироваться</button>
+                        </form>
+                        
 
                         <div className="modal__bot">
 
-                            <button className="modal__btn">Зарегестрироваться</button>
+                            
 
                             <label className="taskForm__label label fake__checkbox">
-                                <input type="checkbox" className="label__checkbox" />
+                                <input type="checkbox" className="label__checkbox" onClick={()=>setDiss(!diss)}/>
                                 <span className="label__checkbox_fake"></span>
                                 <span className="label__text checkbox__text">
                                     Я согласен с условиями сайта
@@ -117,21 +250,21 @@ const Modal = () => {
 
                             <div className="modal__link">
                                 Уже зарегстрированы
-                            <Link to="" className="modal__link">Войдите</Link>
+                            <a onClick={()=>{props.handleCloseReg(); props.handleClickOpen();reset() }}className="modal__link">Войдите</a>
                             </div>
 
 
                         </div>
                     </div>
+                    
+                    
                 </DialogContent>
             </Dialog>
 
 
-            <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-                Вход
-            </Button>
-            <Dialog className="modal" onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
-                <DialogTitle className="modal__title" id="customized-dialog-title" onClose={handleClose}></DialogTitle>
+            
+            <Dialog className="moda" onClose={props.handleClose} aria-labelledby="customized-dialog-title" open={props.open}>
+                <DialogTitle className="modal__title" id="customized-dialog-title" onClose={props.handleClose}></DialogTitle>
                 <DialogContent className="modal__content">
 
                     <div className="modal__wrapper">
@@ -148,32 +281,51 @@ const Modal = () => {
                             </div>
 
                         </div>
+                        <form onSubmit={authorization}>
+                            <div className="modal__center">
+                                <div className="modal__title">{resetPass ? 'Сброс пароля будет выслан на почту' :'Войти по электронной почте:'}</div>
 
-                        <div className="modal__center">
-                            <div className="modal__title">Войти по электронной почте:</div>
-
-                            <label htmlFor="modalEmail" className="modal__label">Электронная почта</label>
-                            <input id="modalEmail" className="modalInp" type="email" required />
-
-                            <label htmlFor="modalPass" className="modal__label">Пароль</label>
-                            <input id="modalPass" className="modalInp" type="password" required />
-                        </div>
-
-                        <div className="modal__bot">
-
+                                <label htmlFor="modalEmail" className="modal__label">Электронная почта</label>
+                                <input 
+                                    id="modalEmail" 
+                                    className="modalInp" 
+                                    type="email" 
+                                    value={email}
+                                    onChange={(e)=>setEmail(e.target.value)}
+                                    required />
+                            {!resetPass && <>
+                                <label htmlFor="modalPass" className="modal__label">Пароль</label>
+                                
+                                <input 
+                                    id="modalPass" 
+                                    className="modalInp" 
+                                    type="password" 
+                                    value={pass}
+                                    minLength={8}
+                                    onChange={(e)=>setPass(e.target.value)}
+                                    required />
+                                    </>
+                                }
+                            </div>
                             <div className="modal__log">
 
-                                <button className="modal__btn modal__btn__log">Войти</button>
-                                <Link to="" className="modal__fgt_pass">Забыли пароль?</Link>
+                                <button className="modal__btn modal__btn__log"  >{!resetPass ? 'Войти' : 'Cброс пароля' }</button>
+                                <a className="modal__fgt_pass" onClick={()=>{
+                                    setReset(true)
+                                }}>{resetPass ? 'войти' :'Забыли пароль?'}</a>
 
                             </div>
+                         
+                          </form>
+                        <div className="modal__bot">
 
+                            
 
 
 
                             <div className="modal__link">
                                 Еще не с нами?
-                            <Link to="" className="modal__link">Зарегестрируйтесь</Link>
+                            <a onClick={()=>{props.handleClose(); props.handleClickOpenReg();reset() }} className="modal__link">Зарегестрируйтесь</a>
                             </div>
 
 
@@ -181,7 +333,12 @@ const Modal = () => {
                     </div>
                 </DialogContent>
             </Dialog>
-
+            <Snackbar open={open} autoHideDuration={6000} onClose={()=>setOpen(true)}>
+                    <Alert onClose={()=>setOpen(false)} severity={status}>
+                        {statusMessage}
+                    </Alert>
+                
+            </Snackbar>
         </div >
     );
 }

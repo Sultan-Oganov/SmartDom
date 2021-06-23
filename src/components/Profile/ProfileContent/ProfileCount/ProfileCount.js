@@ -2,18 +2,18 @@ import React from 'react'
 import './ProfileCount.css'
 import arrow from '../../../../image/searchTask/arrow.svg'
 
-const ProfileCount = () => {
+const ProfileCount = ({balance, bonus}) => {
     return (
         <div className="profileCount">
 
             <div className="profileCount__balance">
 
                 <h3 className="profileCount__balance_item">
-                    Ваш баланс 0 сом
+                    Ваш баланс {balance} сом
                 </h3>
 
                 <h3 className="profileCount__balance_item">
-                    Ваш баланс 0 бонусов
+                    Ваш баланс {bonus} бонусов
                 </h3>
 
             </div>

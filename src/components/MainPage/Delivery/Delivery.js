@@ -4,6 +4,7 @@ import Task from './Task/Task';
 import icon from '../../../image/delivery/ava.jpg';
 import img from '../../../image/delivery/1.svg';
 import img2 from '../../../image/delivery/2.svg';
+import { Link } from 'react-router-dom';
 
 const Delivery = () => {
     return (
@@ -33,7 +34,7 @@ const Delivery = () => {
                         title="Привезти посылку с почты"
                         text="Добрый день! Посылка должна прибыть сегодня в почтовое отделание №5." />
 
-                    <button className="delivery__btn">Создайте своё задание</button>
+                  <Link to='/createTask'>  <button className="delivery__btn" >Создайте своё задание</button></Link>
 
 
                 </div>

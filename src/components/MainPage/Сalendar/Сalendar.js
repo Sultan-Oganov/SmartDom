@@ -1,12 +1,14 @@
 import React from 'react';
 import './Calendar.css';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import img1 from '../../../image/calendar/1.svg';
 import img2 from '../../../image/calendar/2.svg';
 import img3 from '../../../image/calendar/3.svg';
 import img4 from '../../../image/calendar/4.svg';
 
 const Calendar = () => {
+    
+   
     return (
         <div className="calendar">
             <div className="calendar__row">
@@ -18,7 +20,7 @@ const Calendar = () => {
                     <div className="descr__text">
                         Опишите своими словами задачу, которую требуется выполнить
                     </div>
-                    <Link to="/" className="descr__btn">Создать задание</Link>
+                    <Link to="/createTask" className="descr__btn">Создать задание</Link>
                 </div>
             </div>
             <div className="calendar__row">
@@ -54,7 +56,7 @@ const Calendar = () => {
                     <img src={img4} alt="" />
                 </div>
             </div>
-            <button className="calendar__btn">Создайте свой каледарь</button>
+            <button className="calendar__btn" >Создайте свой каледарь</button>
             <div className="calendar__btn_descr">и найдите исполнителя за несколько минут</div>
         </div>
     );
