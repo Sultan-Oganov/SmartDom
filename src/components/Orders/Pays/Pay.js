@@ -6,6 +6,11 @@ import check from '../../../image/icon/check.svg'
 import Dropdown from 'react-bootstrap/Dropdown'
 
 const Pay = () => {
+    const [status, setStatus] = React.useState()
+    React.useEffect(()=>{
+        let status_perform = localStorage.getItem('status_perform')
+        setStatus(status_perform  == 'true' ? true : false)
+    })
     return (
         <div className="pay">
 
@@ -13,8 +18,8 @@ const Pay = () => {
                 <div className="pay__toggles toggles">
 
                     <div className="pay__btns">
-                        <button className="pay__customer pay__btn pay__btn_active">Я заказчик</button>
-                        <button className="pay__executor pay__btn">Я исполнитель</button>
+                        <button className={ status  ? "pay__customer pay__btn" : 'pay__customer pay__btn pay__btn_active'}>Я заказчик</button>
+                        <button className={ !status  ? "pay__executor pay__btn" : 'pay__executor pay__btn pay__btn_active'}>Я исполнитель</button>
                     </div>
 
                     <Dropdown>

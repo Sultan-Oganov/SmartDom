@@ -2,7 +2,7 @@ import React from 'react'
 import './Rating.css'
 import RItem from './RItem/RItem'
 
-const Rating = () => {
+const Ratings = () => {
     return (
         <div className="rating">
 
@@ -23,4 +23,4 @@ const Rating = () => {
     )
 }
 
-export default Rating
+export default Ratings

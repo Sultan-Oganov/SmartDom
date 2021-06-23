@@ -8,11 +8,6 @@ const Notifications = () => {
 
             <div className="notifications__content">
 
-                <label className="checkboxes__row">
-                    <input type="checkbox" className="label__checkbox" />
-                    <div className="checkboxes__fake label__checkbox_fake"></div>
-                    <div className="checkboxes__text ">Системные уведомления</div>
-                </label>
 
                 <label className="checkboxes__row">
                     <input type="checkbox" className="label__checkbox" />

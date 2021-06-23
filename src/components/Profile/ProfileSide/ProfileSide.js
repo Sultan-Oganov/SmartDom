@@ -15,7 +15,7 @@ const ProfileSide = () => {
                 </div>
 
                 <div className="profileSide__linking linking">
-                    <h2 className="linking__label">Подтвержденные аккаунты</h2>
+                    {/* <h2 className="linking__label">Подтвержденные аккаунты</h2>
 
                     <div className="linking__item">
                         <div className="linking__soc"></div>
@@ -71,7 +71,7 @@ const ProfileSide = () => {
                             <div className="linking__name">Apple ID</div>
                             <button className="linking__btn">Привязать</button>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
